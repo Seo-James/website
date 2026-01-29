@@ -90,6 +90,7 @@
       padding: 0.5rem 1rem;
       border-radius: 4px;
       transition: color 0.2s, background 0.2s;
+      white-space: nowrap;
     }
 
     .nav a:hover {
@@ -382,13 +383,17 @@
       }
 
       .nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 2px;
       }
 
       .nav a {
         font-size: 0.85rem;
         padding: 0.4rem 0.75rem;
+        white-space: nowrap;
       }
 
       .hero {
